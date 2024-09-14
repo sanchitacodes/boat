@@ -1,1 +1,1 @@
-# boat
+Experience the essence of boat lifestyle with our audio product website redesign. Immerse yourself in a sleek, dark-themed interface enhanced with captivating animations, designed to elevate your audio journey on the water

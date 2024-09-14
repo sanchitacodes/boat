@@ -1,0 +1,490 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>      
+    <nav>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./logo_boat.png" alt="logo">
+            </a>
+        </div>
+    
+        <div class="nav-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        
+            <div class="navtext">
+    
+                <div class="navitem"><a href="../perso.html">boAt Personalization</a>
+                </div>
+                <div class="navitem"><a href="..gift/gift.html"> Gift with boAt</a>
+                </div>
+                <div class="navitem"><a href="#Categories">Categories</a>
+                </div>
+                <div class="navitem"><a href="#">More</a>
+                </div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const navToggle = document.querySelector('.nav-toggle');
+                  const navText = document.querySelector('.navtext');
+              
+                  navToggle.addEventListener('click', function() {
+                    navText.classList.toggle('active');
+                  });
+                });
+              </script>
+    
+        <div class="navpng">
+            <div class="searchcontainer">
+                <div class="searchicon">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder='Search for "Headphones"' id="search">
+                    <i class="fa fa-times clear"></i>
+                </div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const searchContainer = document.querySelector('.searchcontainer');
+                  const searchToggle = document.querySelector('.searchicon');
+                  const clearIcon = document.querySelector('.clear');
+              
+                  searchToggle.addEventListener('click', function() {
+                    searchContainer.classList.toggle('active');
+                  });
+              
+                  clearIcon.addEventListener('click', function() {
+                    document.getElementById('search').value = '';
+                  });
+                });
+                document.querySelector('.fa.fa-times.clear').addEventListener('click', function() {
+  document.querySelector('.searchcontainer').classList.remove('active');
+});
+
+              </script>
+    
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+                id="cartIcon"
+                src="https://cdn.lordicon.com/mfmkufkr.json"
+                trigger="loop"
+                delay="2000"
+                colors="primary:#FFFFFF,secondary:#FFFFFF"
+                style="width:50px;height:50px">
+            </lord-icon>
+    
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <a href="../Account/login.html" id="accountIcon">
+                <lord-icon id="accountIcon" src="https://cdn.lordicon.com/xfzuyvam.json" trigger="loop" delay="2000"
+                    colors="primary:#FFFFFF,secondary:#FFFFFF" style="width:50px;height:50px">
+                </lord-icon>
+            </a>
+        </div>
+    </nav>
+    
+    
+        <br>
+        <script>
+            let search = document.querySelector(".search");
+            let clear = document.querySelector(".clear");
+            search.onclick = function () {
+                document.querySelector(".searchcontainer").classList.toggle('active');
+            };
+            clear.onclick = function () {
+                document.getElementById("search").value="";
+            };
+        </script> 
+        <div class="one">
+            <h1>TUNE INTO NIRVANA</h1>
+            <video class="hover-video" loop muted>
+                <source src="hover_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <img id="orange-cut" src="Assets/orange2.png" alt="">
+            <img id="fanta" src="h1.png" alt="">
+        </div>
+        <div class="two">
+            <div class="lft-two">
+                
+            </div>
+            <div class="rght-two">
+                <div class="feature feature1">
+                    <h2><i class="ri-shield-line"></i><span class="type-text">Durability</span></h2>
+                    <ul>
+                        <li>Water-resistant, sweat-proof material</li>
+                        <li>Ensures reliable performance over time</li>
+                    </ul>
+                </div>
+                <div class="feature feature1">
+                    <h2><i class="ri-shield-line"></i><span class="type-text">Noise Cancellation</span> </h2>
+                    <ul>
+                        <li>Block out ambient noise and ensure an uninterrupted audio experience.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="four">
+            <div class="lft-four">
+                <div class="feature feature2">
+                    <h2><i class="ri-shield-line"></i>Affordability</h2>
+                    <ul>
+                        <li>Ensures quality audio-experience accesbile to all</li>
+                        
+                    </ul>
+                </div>
+                <div class="feature feature2">
+                    <h2><i class="ri-shield-line"></i>Style</h2>
+                    <ul>
+                        <li> Chic designs resonate with the youth, appealing to their sense of style.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rght-four"></div>
+        </div>
+        <div class="three">
+            <div class="card">
+                <img id="cocacola" src="Designer.jpeg" alt="">
+            </div>
+            <div class="card">
+                <img id="pepsi" src="Designer (6).jpeg" alt="">
+                <h1 class="animate-fade-in"></h1>
+            </div>
+            <div class="card">
+                <img id="pepsi" src="Designer (2).jpeg" alt="">
+            </div>
+        </div>
+
+
+        <div class="cartTab">
+            <div class="a">
+              <p>Your cart</p>
+              <p class="close"><a href="#" id="closeCart">Close</a></p>
+            </div>
+            <div class="list-cart">
+              <div class="image">
+                <img src="img1.webp" height="100px" width="100px">
+                <img src="wired earphones/img6.webp" height="100px" width="100px">
+              </div>
+              <div class="content">
+                <div class="con" data-price="999">
+                  <h1>Earbuds</h1>
+                  <p>999</p>
+                  <div class="quantity">
+                    <button class="qty-btn" onclick="decreaseQty('qty1', 999)">-</button>
+                    <span id="qty1">1</span>
+                    <button class="qty-btn" onclick="increaseQty('qty1', 999)">+</button>
+                  </div>
+                  <div class="btn">Black</div>
+                </div>
+                <div class="con" data-price="400">
+                  <h1>Earphones</h1>
+                  <p>400</p>
+                  <div class="quantity">
+                    <button class="qty-btn" onclick="decreaseQty('qty2', 400)">-</button>
+                    <span id="qty2">1</span>
+                    <button class="qty-btn" onclick="increaseQty('qty2', 400)">+</button>
+                  </div>
+                  <div class="btn">Red</div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="total-price">
+              <p>Total: <span id="totalPrice">1399</span></p>
+            </div>
+            <br>
+            <div class="btn">
+              <button class="checkOut">Check Out</button>
+            </div>
+          </div>     
+          
+          
+          <h5>Discover Our Exclusive Collections</h5>
+        <div class="container" id="Categories">
+            <span class="slider" id="slider1"></span>
+            <span class="slider" id="slider2"></span>
+            <span class="slider" id="slider3"></span>
+            <span class="slider" id="slider4"></span>
+            <span class="slider" id="slider5"></span>
+            <span class="slider" id="slider6"></span>
+            <span class="slider" id="slider7"></span>
+            <span class="slider" id="slider8"></span>
+            <span class="slider" id="slider9"></span>
+
+            <div class="imgContainer">
+                <div class="slide_div" id="slide_1">
+                        <img src="img1.webp" class="img1" id="img1" />
+                    <a href="#slider1" class="button" id="button1"></a>
+                    <h3>Earbuds</h3>
+                    <a href="./airdopes/index.html" class="view-all-button">
+                        <span class="button-text">View All</span>
+                        <img src="wireless-earbuds-with-neon-cyberpunk-style-lighting_23-2151074306.png" alt="Earbuds Icon" class="earbuds-img">
+                      </a>                                      
+
+                </div>
+                <div class="slide_div" id="slide_2">
+                    <img src="img2.webp" alt="" class="img1" id="img2" />
+                    <a href="#slider2" class="button" id="button2"></a>
+                    <h3>Neckband</h3>
+                    <a href="./Neckbands/index.html" class="view-all-button">
+                        <span class="button-text">View All</span>
+                        <img src="./Neckbands/img1.webp" alt="Neckbands Icon" class="earbuds-img">
+                      </a>  
+                </div>
+                <div class="slide_div" id="slide_3">
+                    <img src="img3.webp" alt="" class="img1" id="img3" />
+                    <a href="#slider3" class="button" id="button3"></a>
+                    <h3>SmartWatch</h3>
+                    <a href="./smart watches/index.html" class="view-all-button">
+                        <span class="button-text">View All</span>
+                        <img src="smartwatch (2).png" alt="Neckbands Icon" class="earbuds-img">
+                      </a>  
+                </div>
+                <div class="slide_div" id="slide_4">
+                    <img src="img4.webp" alt="" class="img1" id="img4" />
+                    <a href="#slider4" class="button" id="button4"></a>
+                    <h3>Headphones</h3>
+                    <a href="./wireless headphones/index.html" class="view-all-button">
+                        <span class="button-text">View All</span>
+                        <img src="./wireless headphones/img1.webp" alt="Neckbands Icon" class="earbuds-img">
+                      </a> 
+                </div>
+                <div class="slide_div" id="slide_5">
+                    <img src="img5.webp" class="img1" id="img5" />
+                    <a href="#slider5" class="button" id="button5"></a>
+                    <h3>Speaker</h3>
+                    <a href="./speakers/index.html" class="view-all-button">
+                        <span class="button-text">View All</span>
+                        <img src="headphones (2).png" alt="Neckbands Icon" class="earbuds-img">
+                      </a> 
+                </div>
+                <div class="slide_div" id="slide_6">
+                    <img src="img6.webp" alt="" class="img1" id="img6" />
+                    <a href="#slider6" class="button" id="button6"></a>
+                    <h3>Earphones</h3>
+                    <a href="./wired earphones/index.html" class="view-all-button">
+                        <span class="button-text">View All</span>
+                        <img src="img6.webp" alt="Neckbands Icon" class="earbuds-img">
+                      </a> 
+                </div>
+                <div class="slide_div" id="slide_7">
+                    <img src="img7.webp" alt="" class="img1" id="img7" />
+                    <a href="#slider7" class="button" id="button7"></a>
+                    <h3>Gaming</h3>
+                    <a href="./immortal gaming/index.html" class="view-all-button">
+                        <span class="button-text">View All</span>
+                        <img src="gaming.png" alt="Neckbands Icon" class="earbuds-img">
+                      </a> 
+                </div>
+
+                <div class="slide_div" id="slide_8">
+                    <img src="img8.webp" class="img1" id="img8" />
+                    <a href="#slider8" class="button" id="button8"></a>
+                    <h3>Soundbars</h3>
+                    <a href="./soundbars/index.html" class="view-all-button">
+                    <span class="button-text">View All</span>
+                    <img src="soundbar.png" alt="Neckbands Icon" class="earbuds-img">
+                    </a> 
+                    
+                </div>
+                <div class="slide_div" id="slide_9">
+                    <img src="img9.webp" class="img1" id="img9" />
+                    <a href="#slider9" class="button" id="button9"></a>
+                    <h1>Wired Headphones</h1>
+                    <a href="./wired headphones/index.html" class="view-all-button">
+                        <span class="button-text">View All</span>
+                        <img src="h1.png" alt="Neckbands Icon" class="earbuds-img">
+                      </a> 
+                </div>
+                
+            </div>
+        </div>
+        <h5>Top Picks: Your Favorites Await!</h5>
+        <div class="wrapper">
+            <div class="container1">
+                <input type="radio" name="slide" id="c1" checked>
+            
+                <label for="c1" class="card1" id="d">
+                    <div class="row">
+                        <div class="icon"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="40" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><path d="M44,20c0-1.104-0.896-2-2-2s-2,0.896-2,2  c0,0.476,0,14.524,0,15c0,1.104,0.896,2,2,2s2-0.896,2-2C44,34.524,44,20.476,44,20z" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"/><path d="M8,19C8,9.611,15.611,2,25,2s17,7.611,17,17" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"/><path d="M44,20c2.762,0,5,3.357,5,7.5  c0,4.141-2.238,7.5-5,7.5" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"/><path d="M6,20c0-1.104,0.896-2,2-2s2,0.896,2,2  c0,0.476,0,14.524,0,15c0,1.104-0.896,2-2,2s-2-0.896-2-2C6,34.524,6,20.476,6,20z" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"/><path d="M6,20c-2.761,0-5,3.357-5,7.5  C1,31.641,3.239,35,6,35" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"/></svg></div>
+                        <div class="description">
+                            <h4>HEADPHONES</h4>
+                            <p>Uncompromised audio.</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2" >
+        <label for="c2" class="card1" id="e">
+            <div class="row">
+                <div class="icon"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 91 91" height="40" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="40" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M36.056,32.235C35.969,32.254,35.975,32.259,36.056,32.235L36.056,32.235z"/><path d="M46.242,29.749c5.152-2.417,8.324-6.999,8.327-12.752c0.002-5.917-2.536-11.591-8.062-14.195   c-2.588-1.223-5.831-1.837-8.762-1.287c-1.27-1.895-4.97-1.411-4.97,1.473c0,0.473-0.002,0.949-0.002,1.423   c-1.354,0.101-6.397,0.381-6.717,0.381c-2.382,0.003-4.896,0.542-7.04,1.567c-3.397,1.618-5.094,3.946-6.118,7.099   c-1.198,0.092-2.331,0.904-2.331,2.457c0,8.814,0.096,17.629,0.142,26.443c0.008,1.303,1.104,2.427,2.42,2.42   c1.58-0.01,3.162-0.018,4.742-0.026c-0.04,1.333-0.359,13.477-0.448,18.22c-0.127,6.836-0.42,13.683-0.42,20.521   c0,3.331,5.18,3.338,5.18,0c-0.001-7.124-0.336-14.268-0.527-21.391c-0.125-4.746-0.519-16.187-0.541-17.368   c1.646-0.01,3.293-0.018,4.941-0.026c1.265-0.007,2.357-1.071,2.349-2.35c-0.024-4.505,0.044-9.019,0.107-13.537   c1.427-0.193,2.898-0.252,4.357-0.277c0.007,0.379,0.008,0.76,0.015,1.139c0.044,2.344,3.351,2.498,3.17,2.552   C36.167,32.21,44.13,30.742,46.242,29.749z M43.987,6.306c4.837,2.036,6.763,7.397,5.919,12.384   c-0.759,4.497-4.618,6.716-8.727,7.679c-0.876,0.206-1.965,0.252-3.074,0.327c0.102-7.33,0.078-14.657,0.072-21.987   C40.121,5.223,42.165,5.536,43.987,6.306z M23.667,9.399c-0.354,10.177,0.028,20.408,0.04,30.597   c-2.714-0.015-5.429-0.03-8.142-0.044c0.051-8.012,0.126-16.026,0.126-24.038c0-0.865-0.355-1.498-0.876-1.908   C16.554,11.106,20.208,9.653,23.667,9.399z M28.571,24.224c0.054-5.058,0.048-10.111-0.137-15.151   c1.456,0.005,2.921-0.063,4.336-0.145c-0.006,5.184-0.006,10.365,0.046,15.548C31.395,24.463,29.958,24.411,28.571,24.224z"/><path d="M81.167,77.027c0.05-8.813,0.144-17.628,0.144-26.442c0-1.55-1.133-2.363-2.333-2.456c-1.022-3.153-2.72-5.483-6.115-7.101   c-2.146-1.021-12.403-1.847-13.759-1.946c0-0.477-0.002-0.949-0.002-1.425c0-2.878-3.698-3.369-4.969-1.473   c-2.932-0.55-6.175,0.064-8.763,1.287c-5.522,2.61-8.062,8.277-8.06,14.197c0.003,5.748,3.175,10.337,8.327,12.752   c2.112,0.992,4.36,1.628,6.66,2.005c0.876,0.144,3.415,0.455,3.527,0.479c-0.182-0.053,3.125-0.214,3.17-2.552   c0.008-0.379,0.008-0.76,0.015-1.139c1.46,0.024,2.93,0.087,4.356,0.276c0.064,4.518,0.133,9.032,0.108,13.537   c-0.007,1.276,1.083,2.343,2.35,2.349c1.535,0.011,3.071,0.019,4.608,0.025c-0.058,0.71-0.083,1.346-0.12,1.749   c-0.228,2.347-0.434,4.692-0.613,7.042c-0.257,3.331,5.434,3.338,5.178,0c-0.156-2.036-0.306-4.076-0.438-6.114   c-0.058-0.89-0.11-1.772-0.187-2.655c1.501,0.008,3,0.015,4.5,0.022C80.062,79.454,81.161,78.332,81.167,77.027z M77.063,48.676   c-0.519,0.41-0.875,1.043-0.875,1.909c0,8.011,0.077,16.026,0.127,24.036c-2.714,0.017-5.429,0.03-8.144,0.045   c0.012-10.188,0.396-20.42,0.041-30.597C71.668,44.325,75.323,45.776,77.063,48.676z M50.697,61.039   c-4.108-0.964-7.965-3.18-8.727-7.678c-0.844-4.998,1.087-10.338,5.922-12.386c1.82-0.772,3.866-1.085,5.809-1.596   c-0.005,7.33-0.028,14.656,0.072,21.986C52.666,61.293,51.578,61.247,50.697,61.039z M59.063,59.146   c0.053-5.184,0.053-10.365,0.046-15.548c1.414,0.084,2.878,0.153,4.335,0.145c-0.185,5.042-0.189,10.095-0.137,15.15   C61.919,59.082,60.484,59.133,59.063,59.146z"/><path d="M55.823,66.904C55.904,66.929,55.909,66.924,55.823,66.904L55.823,66.904z"/></g></svg></div>
+                <div class="description">
+                    <h4>earphones</h4>
+                    <p>Exhale your worries while inhaling the music</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c3" >
+        <label for="c3" class="card1" id="f">
+            <div class="row">
+                <div class="icon"><?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1,.cls-2{fill:none;}.cls-2{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><g data-name="Layer 2" id="Layer_2"><g id="Workspace"><rect class="cls-1" height="30" width="40"/><path class="cls-2" d="M11,13V8a1,1,0,0,0-1-1H9.11A2.07,2.07,0,0,0,7,8.66,2,2,0,0,0,9,11v2"/><line class="cls-2" x1="9" x2="9" y1="9" y2="11"/><path class="cls-2" d="M13,13V8a1,1,0,0,1,1-1h.89A2.07,2.07,0,0,1,17,8.66,2,2,0,0,1,15,11v2"/><line class="cls-2" x1="15" x2="15" y1="9" y2="11"/><path class="cls-2" d="M7,9.26A2,2,0,0,0,6,11v2"/><path class="cls-2" d="M18,13V11a2,2,0,0,0-1-1.74"/><path class="cls-2" d="M6,13H18a0,0,0,0,1,0,0v3a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2V13A0,0,0,0,1,6,13Z"/><line class="cls-2" x1="11" x2="13" y1="9" y2="9"/><line class="cls-2" x1="12" x2="12" y1="15" y2="15"/></g></g></svg></div>
+                <div class="description">
+                    <h4>Eardrops</h4>
+                    <p>Get the decibels delivered to your ears perfectly.</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c4" >
+        <label for="c4" class="card1" id="g">
+            <div class="row">
+                <div class="icon"><?xml version="1.0" ?><svg class="bi bi-smartwatch" fill="black" height="50" viewBox="0 0 16 16" width="40" xmlns="http://www.w3.org/2000/svg"><path d="M9 5a.5.5 0 0 0-1 0v3H6a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5V5z"/><path d="M4 1.667v.383A2.5 2.5 0 0 0 2 4.5v7a2.5 2.5 0 0 0 2 2.45v.383C4 15.253 4.746 16 5.667 16h4.666c.92 0 1.667-.746 1.667-1.667v-.383a2.5 2.5 0 0 0 2-2.45V8h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H14v-.5a2.5 2.5 0 0 0-2-2.45v-.383C12 .747 11.254 0 10.333 0H5.667C4.747 0 4 .746 4 1.667zM4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7A1.5 1.5 0 0 1 4.5 3z"/></svg></div>
+                <div class="description">
+                    <h4>Smartwatch</h4>
+                    <p>Empower Your Wrist, Limitless Possibilities.</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c5" >
+        <label for="c5" class="card1" id="h">
+            <div class="row">
+                <div class="icon"><?xml version="1.0" ?><svg fill="none" height="35" viewBox="0 0 24 24" width="55" xmlns="http://www.w3.org/2000/svg"><path d="M17 3H7C5.89543 3 5 3.89543 5 5V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V5C19 3.89543 18.1046 3 17 3Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M12 7H12.01" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="12" cy="14" r="3" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></div>
+                <div class="description">
+                    <h4>Speakers</h4>
+                    <p>Ignite Your Senses With the Ultimate Speaker Experience</p>
+                </div>
+            </div>
+        </label>
+    </div>
+</div>        
+        <footer class="footer">
+            <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="100%"
+                height="100%"
+                viewBox="0 0 1600 900"
+              >
+                <defs>
+                  <path
+                    id="wave"
+                    fill="gray"
+                    d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+            s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+                  />
+                </defs>
+                <g>
+                  <use xlink:href="#wave" opacity=".4">
+                    <animateTransform
+                      attributeName="transform"
+                      attributeType="XML"
+                      type="translate"
+                      dur="8s"
+                      calcMode="spline"
+                      values="270 230; -334 180; 270 230"
+                      keyTimes="0; .5; 1"
+                      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                      repeatCount="indefinite"
+                    />
+                  </use>
+                  <use xlink:href="#wave" opacity=".6">
+                    <animateTransform
+                      attributeName="transform"
+                      attributeType="XML"
+                      type="translate"
+                      dur="6s"
+                      calcMode="spline"
+                      values="-270 230;243 220;-270 230"
+                      keyTimes="0; .6; 1"
+                      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                      repeatCount="indefinite"
+                    />
+                  </use>
+                  <use xlink:href="#wave" opacty=".9">
+                    <animateTransform
+                      attributeName="transform"
+                      attributeType="XML"
+                      type="translate"
+                      dur="4s"
+                      calcMode="spline"
+                      values="0 230;-140 200;0 230"
+                      keyTimes="0; .4; 1"
+                      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                      repeatCount="indefinite"
+                    />
+                  </use>
+                </g>
+              </svg>
+        
+            <div class="front">
+            <div class="leftfooter">
+                <img src="./boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg" alt="boAt logo" class="footlogo">
+                <input type="email" name="email" id="email" placeholder="Enter the email">
+                <button id="subscribe" type="submit">Subscribe</button>
+            </div>
+
+            <div class="rightfooter">
+                <h4>Let's Get Social</h4>
+                <div class="social">
+                    <i class="ri-facebook-box-fill"></i>
+                    <i class="ri-instagram-fill"></i>
+                    <i class="ri-twitter-x-fill"></i>
+                    <i class="ri-youtube-fill"></i>
+                    <i class="ri-linkedin-box-fill"></i>
+                </div>
+                <br>
+                <div class="privacy">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
+                    </ul>
+                </div>
+                <br>
+                <p class="copywrite1">© 2024 Imagine Marketing Limited. All Rights Reserved.</p>
+                <address>
+                    For queries, contact us: Manager, Imagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing & E-wing, Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India
+                </address>
+            </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+   <script>
+        ScrollReveal({reset:true,
+              distance:'60px',
+              duration: 2500,
+              delay: 400
+});
+
+ScrollReveal().reveal('.feature1', {delay: 750, origin: 'right'});
+ScrollReveal().reveal('.feature2', {delay: 750, origin: 'left'});
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
